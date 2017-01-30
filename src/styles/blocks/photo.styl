@@ -1,0 +1,62 @@
+.photo
+    padding-bottom 40px
+    position relative
+    min-height 493px
+    background-color #f5f6f7
+    box-sizing border-box
+    overflow hidden
+
+    &__content
+        col()
+        col-6()
+        col-sm-12()
+        padding-top 110px
+        padding-left 45px
+    
+    &__title
+        font-size 18px
+        color $color-green
+        font-weight bold
+        text-transform uppercase
+        letter-spacing 3px
+        white-space pre-line
+    
+    &__text
+        margin-top 40px
+        font-size 12px
+        line-height 2
+        letter-spacing 1.5px
+        white-space pre-line
+    
+    &__button
+        margin-top 45px
+
+        &--size
+            padding 20px 40px
+
+    &__image-container
+        col()
+        col-7()
+        col-sm-10()
+        margin-top auto 
+        margin-left -135px
+        position relative
+        top 45px
+        bottom 0             
+    
+    &__image
+        max-width 100%
+
+        
+    @media screen and (max-width $break_sm)
+        &__content
+            margin-bottom 80px
+            padding-left 0
+            text-align center
+            
+        &__title
+        &__text
+            white-space normal
+        
+        &__image-container
+            margin-left 15px

@@ -1,0 +1,83 @@
+.download
+    text-align center
+    min-height 400px
+    background-color #f5f6f7
+
+    &__title
+        col()
+        col-12()
+        padding-top 90px
+        font-size 1.25em
+        font-weight bold
+        text-align center
+        text-transform uppercase
+        letter-spacing 2px
+
+    &__text
+        col()
+        offset-left(1)
+        col-10()
+        offset-left-sm(0)
+        col-sm-12()
+        margin-top 15px
+        line-height 1.75
+        font-size .75em
+        text-transform uppercase
+        letter-spacing 2px
+    
+    &__buttons
+        col()
+        col-12()
+        col-sm-9()
+        col-xs-12()
+        display flex
+        flex-wrap(wrap)
+        justify-content(center)
+        margin-top 55px
+    
+    &__button
+        position relative
+        margin-right 80px
+        margin-bottom 20px
+        padding-left 20px
+        height 55px
+        line-height @height
+        text-align left
+        text-transform uppercase
+        background-color #1abc9c
+        border-radius 3px 0 0 3px
+        letter-spacing 2px
+        box-sizing border-box
+        flex-basis 240px
+        transition all .35s ease
+        &::after
+            font-family 'FontAwesome'
+            content ''
+            position absolute
+            right -55px
+            height 100%
+            width 55px
+            font-size 24px
+            text-align center
+            background-color $color-green
+            border-radius 0 3px 3px 0
+            transition all .35s ease
+        &:hover
+            background-color (#1abc9c + 7%)
+            &::after
+                background-color ($color-green + 7%)
+        
+        &--apple
+            &::after
+                content "\f179"
+        
+        &--android
+            margin-right 55px
+            &::after
+                content "\f17b"
+        
+    @media screen and (max-width $break_sm)
+        &__button
+            margin-right 55px
+
+

@@ -1,0 +1,53 @@
+.banner
+    background-image url('../images/banner/banner__bg.jpg')
+    background-repeat no-repeat
+    background-size cover
+    overflow hidden
+
+    &__nav
+        col()
+        col-9()
+        offset-left(2)
+        padding-top 35px
+    
+    &__content
+        text-align center
+        padding-top 240px
+        animation-fill-mode forwards
+
+    &__title
+        font-size 2.25em
+        color #fff
+        font-weight bold
+        text-transform uppercase
+        letter-spacing 5px
+    
+    &__note
+        margin-top 15px
+        font-size 1em
+        color #fff
+        letter-spacing 2.5px
+    
+    &__button
+        margin-top 30px
+    
+    &__social-icons
+        display flex
+        justify-content(center)
+        col()
+        col-12()
+        margin-top 220px
+        padding-bottom 25px
+    
+    &__mobile-container
+        col()
+        col-12()
+        justify-content(flex-end)
+        padding-top 35px
+    
+    &__mobile-nav
+        transform translateX(100%)
+        
+        &--show
+            transform translateX(0)
+

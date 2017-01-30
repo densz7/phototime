@@ -1,0 +1,37 @@
+.form-subscribe
+    display flex
+    height 60px
+    width 100%
+    max-width 350px
+    line-height @height
+
+    &__email
+        width 100%
+        padding 0 20px
+        border none
+        border-radius 3px 0 0 3px
+        outline none
+        box-sizing border-box
+        &::-webkit-input-placeholder
+            color #000
+            text-transform uppercase
+    
+    &__submit
+        width 100%
+        max-width 60px
+        background-color $color-green
+        border none
+        border-radius 0 3px 3px 0
+        outline none
+        cursor pointer
+        box-sizing border-box
+        transition all .35s ease
+        &:hover
+            background-color ($color-green + 7%)
+    
+    &__submit-icon
+        font-family 'FontAwesome'
+        font-size 1.5em
+        color #fff
+        &::before
+            content '\f00c'

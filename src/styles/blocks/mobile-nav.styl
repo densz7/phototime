@@ -1,0 +1,20 @@
+.mobile-nav
+    display none
+    flex-direction(column)
+    padding-top 100px
+    padding-left 20px
+    position absolute
+    top 0
+    bottom 0
+    right 0
+    width 200px
+    background-color $color-green
+    transition all .35s ease
+
+    &__link
+        margin-bottom 15px
+        text-transform uppercase
+    
+    @media screen and (max-width: $break_sm)
+        display flex
+        

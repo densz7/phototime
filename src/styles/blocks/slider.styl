@@ -1,0 +1,63 @@
+.slider
+    position relative
+
+    &__slide
+        position relative
+    
+        &:hover .slider__filter
+            opacity 1
+
+    &__image
+        margin 0
+        width 100%
+        max-width 370px
+    
+    &__arrows
+        margin-bottom 10px
+        display inline-block
+        position relative
+
+        &--design
+            margin-top 40px
+
+        &--community
+            left 90%
+
+    &__prev
+    &__next
+        font-family 'FontAwesome'
+        font-size 26px
+        color #000
+        cursor pointer
+
+    &__prev
+        margin-right 15px
+        &::before
+            content: "\f104"
+    
+    &__next
+        &::before
+            content: "\f105"
+    
+    &__filter
+        display flex
+        position absolute
+        top 0
+        bottom 0
+        width 100%
+        max-width 370px
+        background-color rgba($color-green, .8)
+        opacity 0
+        transition all .35s ease
+
+        &-icon
+            margin auto
+            font-family "FontAwesome"
+            font-size 35px
+            &::before
+                content "\f065"
+
+    @media screen and (max-width $break_sm)
+        &__arrows
+            position static
+    

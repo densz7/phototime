@@ -1,0 +1,60 @@
+.design
+    position relative
+    min-height 560px
+    overflow hidden
+
+    &__image-container
+        col()
+        col-7()
+        col-sm-12()
+        display flex
+        justify-content-sm(center)
+        order-sm(1)
+        padding-left 40px
+        padding-top 150px
+        max-width 100%
+    
+    &__image
+        max-width 100%
+
+    &__slider
+        col()
+        col-5()
+        col-sm-12()
+        padding-top 150px
+    
+    &__title
+        font-size 1.125em
+        color $color-green
+        font-weight bold
+        text-transform uppercase
+        letter-spacing 5px
+        white-space pre-line
+    
+    &__text
+        margin-top 40px
+        font-size .75em
+        line-height 2
+        letter-spacing 1.5px
+        white-space pre-line
+
+    
+    &__button
+        margin-top 45px
+
+        &--size
+            padding 20px 40px
+    
+    @media screen and (max-width $break_sm)
+
+        &__image-container
+            position relative
+            padding-left 0
+
+        &__slider
+            text-align center
+            padding-bottom 40px
+        
+        &__title
+        &__text
+            white-space normal

@@ -1,0 +1,19 @@
+.nav
+    display flex
+    flex-wrap(wrap)
+    justify-content(space-between)
+    align-items(center)
+    letter-spacing 3px
+    
+    &__link
+        font-size 1em
+        font-weight bold
+        color #fff
+        text-transform uppercase
+        transition all .35s ease
+
+        &:hover
+            color $color-green
+        
+    @media screen and (max-width: $break_sm)
+        display none
